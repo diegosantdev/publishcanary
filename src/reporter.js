@@ -130,7 +130,7 @@ function renderScoreBar(score) {
   else if (score >= 55) { fillChar = '█'; colorFn = kleur.yellow; }
   else { fillChar = '█'; colorFn = kleur.red; }
 
-  return colorFn(fillChar.repeat(filled)) + kleur.dim('░'.repeat(empty));
+  return colorFn(fillChar.repeat(filled)) + kleur.dim('·'.repeat(empty));
 }
 
 function renderSummaryLine(violations) {

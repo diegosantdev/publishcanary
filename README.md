@@ -9,8 +9,8 @@
 *"Scan what you ship. Not just what you write."*
 
 [![npm](https://img.shields.io/npm/v/npm-canary?color=cyan&label=npm-canary)](https://www.npmjs.com/package/npm-canary)
-![License](https://img.shields.io/npm/l/npm-canary)
-![Node](https://img.shields.io/node/v/npm-canary)
+![License](https://img.shields.io/github/license/diegosantdev/publishcanary)
+![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-blue)
 
 </div>
 
@@ -76,13 +76,13 @@ npx npm-canary audit @anthropic-ai/claude-code@2.1.7
 
   ────────────────────────────────────────────────
 
-  safety score    0 / 100  ░░░░░░░░░░░░░░░░░░░░  F — Critical issues
+  safety score    0 / 100  ····················  F — Critical issues
 ```
 
 The current latest (`2.1.87`) still ships a **12.37 MB unminified `cli.js`**:
 
 ```
-  safety score   80 / 100  ████████████████░░░░  B — Good
+  safety score   80 / 100  ████████████████····  B — Good
 ```
 
 ---
