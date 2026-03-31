@@ -8,7 +8,7 @@
 
 *"Scan what you ship. Not just what you write."*
 
-[![npm](https://img.shields.io/npm/v/npm-canary?color=cyan&label=npm-canary)](https://www.npmjs.com/package/npm-canary)
+[![npm](https://img.shields.io/github/v/tag/diegosantdev/publishcanary?color=cyan&label=npm-canary)](https://github.com/diegosantdev/publishcanary/releases)
 ![License](https://img.shields.io/github/license/diegosantdev/publishcanary)
 ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-blue)
 
