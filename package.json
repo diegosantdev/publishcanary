@@ -1,0 +1,54 @@
+{
+  "name": "npm-canary",
+  "version": "1.0.0",
+  "description": "Detect secrets, source maps, and oversized files before (and after) npm publish",
+  "keywords": [
+    "npm",
+    "publish",
+    "security",
+    "source-map",
+    "secrets",
+    "audit",
+    "canary"
+  ],
+  "homepage": "https://github.com/publishcanary/npm-canary",
+  "bugs": {
+    "url": "https://github.com/publishcanary/npm-canary/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/publishcanary/npm-canary.git"
+  },
+  "license": "MIT",
+  "author": "Diego Fernando (@diegosantdev)",
+  "bin": {
+    "npm-canary": "./src/index.js",
+    "canary": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.js",
+    "test:watch": "node --test --watch tests/**/*.test.js",
+    "prepublishOnly": "npm test",
+    "canary": "node src/index.js check"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.3.2",
+    "commander": "^12.1.0",
+    "fast-glob": "^3.3.2",
+    "kleur": "^4.1.5",
+    "node-fetch": "^3.3.2",
+    "tar": "^7.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/**/*.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}
