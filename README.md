@@ -299,3 +299,5 @@ MIT © [@diegosantdev](https://github.com/diegosantdev)
 <div align="center">
   <sub><i>Built after the Claude Code leak. Everyone was reading the agent code: I wanted to know what the agent was quietly shipping.</i></sub>
 </div>
+
+<!-- refresh CI status -->
