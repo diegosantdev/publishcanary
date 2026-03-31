@@ -1,6 +1,5 @@
 'use strict';
 
-const { select, input } = require('@inquirer/prompts');
 const kleur = require('kleur');
 const pkg = require('../package.json');
 
@@ -28,12 +27,14 @@ async function showHeader() {
   console.log('');
 }
 
-async function pauseAndReturn() {
-  console.log('');
-  await input({ message: 'Press Enter to return to menu' });
-}
-
 async function startInteractive() {
+  const { select, input } = await import('@inquirer/prompts');
+
+  async function pauseAndReturn() {
+    console.log('');
+    await input({ message: 'Press Enter to return to menu' });
+  }
+
   while (true) {
     await showHeader();
 
